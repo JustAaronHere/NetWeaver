@@ -1,0 +1,12 @@
+target/
+.git/
+.gitignore
+*.log
+*.tmp
+*.pcap
+reports/
+logs/
+.vscode/
+.idea/
+*.iml
+.DS_Store

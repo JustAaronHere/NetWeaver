@@ -1,0 +1,92 @@
+# NetWeaver Configuration File
+# Place this at ~/.config/netweaver/config.toml or /etc/netweaver/config.toml
+
+[scanning]
+# Default number of concurrent threads for scanning
+default_threads = 100
+
+# Default ports to scan if not specified
+default_ports = [21, 22, 23, 25, 53, 80, 110, 143, 443, 445, 3306, 3389, 5432, 5900, 8080, 8443]
+
+# Timeout for host detection (milliseconds)
+host_timeout_ms = 500
+
+# Timeout for port scanning (milliseconds)
+port_timeout_ms = 200
+
+[traceroute]
+# Default maximum hops
+max_hops = 30
+
+# Default number of probes per hop
+probes_per_hop = 3
+
+# Enable historical route tracking
+track_history = true
+
+# History retention (days)
+history_retention_days = 30
+
+[optimization]
+# Enable turbo mode by default
+turbo_mode = false
+
+# Automatically apply optimizations (requires confirmation)
+auto_apply = false
+
+# DNS servers to benchmark
+dns_servers = [
+    { name = "Google", address = "8.8.8.8" },
+    { name = "Cloudflare", address = "1.1.1.1" },
+    { name = "Quad9", address = "9.9.9.9" },
+    { name = "OpenDNS", address = "208.67.222.222" },
+]
+
+[monitoring]
+# Default monitoring interface (empty = all interfaces)
+default_interface = ""
+
+# Update interval for real-time dashboard (milliseconds)
+refresh_interval_ms = 1000
+
+# Enable logging by default
+enable_logging = true
+
+# Log file path (daemon mode)
+log_path = "/var/log/netweaver.log"
+
+# Log rotation size (MB)
+log_rotation_mb = 100
+
+[security]
+# Enable continuous ARP monitoring
+arp_monitoring = false
+
+# Alert on suspicious activity
+enable_alerts = true
+
+# Whitelist trusted MAC addresses
+trusted_macs = []
+
+[reporting]
+# Default report format
+default_format = "json"
+
+# Include graphs in HTML reports
+include_graphs = true
+
+# Compression for large reports
+compress_reports = true
+
+[advanced]
+# Buffer pool size for packet handling
+buffer_pool_size = 1024
+
+# Buffer size per packet (bytes)
+buffer_size = 65535
+
+# Enable experimental features
+enable_experimental = false
+
+# Verbose logging level (error, warn, info, debug, trace)
+log_level = "info"
