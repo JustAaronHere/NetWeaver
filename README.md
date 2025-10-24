@@ -91,7 +91,7 @@ brew install libpcap
 ### Build from Source
 
 ```bash
-git clone https://github.com/yourusername/netweaver.git
+git clone https://github.com/JustAaronHere/netweaver.git
 cd netweaver
 cargo build --release
 
