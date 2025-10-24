@@ -546,9 +546,8 @@ NetWeaver builds on the shoulders of giants:
 ## Support
 
 - **Documentation**: You're reading it! Check command-specific help with `netweaver <command> --help`
-- **Issues**: Report bugs at https://github.com/yourusername/netweaver/issues
-- **Discussions**: Join the community at https://github.com/yourusername/netweaver/discussions
+- **Issues**: Report bugs at https://github.com/JustAaronHere/netweaver/issues
 
 ---
 
-**Built with ❤️  by the NetWeaver team. Happy networking!**
+**Built with ❤️  by the Alacran team.**
